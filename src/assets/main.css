@@ -1,0 +1,209 @@
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(249, 246, 239, 1);
+}
+
+.MainTitle {
+  width: 1240px;
+  height: 330px;
+  top: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  transition: all 1s ease-in-out;
+}
+
+.TitleImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.juanzhouDiv {
+  width: auto;
+  height: auto;
+  top: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  padding-top: 115px;
+  position: relative;
+}
+
+.juanzhouBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 50px;
+  background: rgb(0, 0, 0, 0.5);
+  transition: width 0.5s ease-in-out;
+}
+
+.container:hover::before {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 55px;
+}
+
+.eatway {
+  width: 210px;
+  height: 71px;
+  text-align: center;
+}
+
+.move-and-shrink {
+  position: absolute;
+  text-align: center;
+  transform: translate(-300px, -80px) scale(0.5);
+}
+
+.LeftBtnFirst {
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 20px;
+  left: -150px;
+  transition: left 0.5s ease-in-out;
+  border: none;
+  outline: none;
+  position: fixed;
+  cursor: pointer;
+  top: 150px;
+}
+
+.LeftBtnFirst:hover {
+  left: 0px;
+}
+
+.LeftBtnSecond {
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 20px;
+  left: -150px;
+  transition: left 0.5s ease-in-out;
+  border: none;
+  outline: none;
+  position: fixed;
+  cursor: pointer;
+  top: 250px;
+}
+
+.LeftBtnSecond:hover {
+  left: 0px;
+}
+
+.LeftBtnThree {
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 20px;
+  left: -150px;
+  transition: left 0.5s ease-in-out;
+  border: none;
+  outline: none;
+  position: fixed;
+  cursor: pointer;
+  top: 350px;
+}
+
+.LeftBtnThree:hover {
+  left: 0px;
+}
+
+.pop-up-button {
+  animation: pop-up-animation 0.5s ease-out;
+}
+
+@keyframes pop-up-animation {
+  from {
+    left: -300px;
+  }
+  to {
+    left: -150px;
+  }
+}
+
+.gobackBtn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  height: 76.58px;
+  width: 76.58px;
+  border-radius: 50px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gobackBtn:hover {
+  width: 256px;
+}
+
+.gobackBtn .gobackIcon {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gobackBtn:hover .gobackIcon {
+  transform: translateX(0);
+}
+
+.gobackBtn .getbackWord {
+  position: absolute;
+  width: 163px;
+  height: 60px;
+  top: 8px;
+  right: 20px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.gobackBtn:hover .getbackWord {
+  display: inline;
+  opacity: 1;
+}
+
+.gobackBtnDiv {
+  width: auto;
+  height: auto;
+  top: 450px;
+  position: fixed;
+}
+
+.left-go-on {
+  animation: left-go-on 0.5s ease-in-out;
+}
+
+@keyframes left-go-on {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 0px;
+  }
+}

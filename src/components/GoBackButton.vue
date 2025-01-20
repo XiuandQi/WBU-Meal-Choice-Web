@@ -1,0 +1,23 @@
+<template>
+    <div class="gobackBtnDiv left-go-on">
+      <button class="gobackBtn" @click="handleGoBack">
+        <span>
+          <img src="../assets/image/gobackicon2.png" class="gobackIcon">
+        </span>
+        <span>
+          <img src="../assets/image/goback.png" class="getbackWord">
+        </span>
+      </button>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'GoBackButton',
+    methods: {
+      handleGoBack() {
+        this.$emit('go-back');
+      }
+    }
+  };
+  </script>
