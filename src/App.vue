@@ -47,30 +47,30 @@ export default {
       switch (clickedButtonId) {
         case IndexButtonId[0]:
           newButtons = [
-            { id: 'second_floorBtn', image: 'image/second_floor.png' },
-            { id: 'south_partBtn', image: 'image/south_part.png' },
-            { id: 'out_schoolBtn', image: 'image/out_school.png' }
+            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnFirst pop-up-button' },
+            { id: 'south_partBtn', image: 'src/assets/image/south_part.png' ,class: 'LeftBtnSecond pop-up-button' },
+            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png' ,class: 'LeftBtnThree pop-up-button' }
           ];
           break;
         case IndexButtonId[1]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'image/first_floor.png' },
-            { id: 'south_partBtn', image: 'image/south_part.png' },
-            { id: 'out_schoolBtn', image: 'image/out_school.png' }
+            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
+            { id: 'south_partBtn', image: 'src/assets/image/south_part.png',class: 'LeftBtnSecond pop-up-button' },
+            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png',class: 'LeftBtnThree pop-up-button' }
           ];
           break;
         case IndexButtonId[2]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'image/first_floor.png' },
-            { id: 'second_floorBtn', image: 'image/second_floor.png' },
-            { id: 'out_schoolBtn', image: 'image/out_school.png' }
+            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
+            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnSecond pop-up-button' },
+            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png',class: 'LeftBtnThree pop-up-button' }
           ];
           break;
         case IndexButtonId[3]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'image/first_floor.png' },
-            { id: 'second_floorBtn', image: 'image/second_floor.png' },
-            { id: 'south_partBtn', image: 'image/south_part.png' }
+            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
+            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnSecond pop-up-button' },
+            { id: 'south_partBtn', image: 'src/assets/image/south_part.png',class: 'LeftBtnThree pop-up-button' }
           ];
           break;
       }

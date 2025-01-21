@@ -1,11 +1,14 @@
 <template>
-    <div class="juanzhouDiv" id="juanzhouDiv">
+    <!-- <div class="juanzhouDiv" id="juanzhouDiv">
       <button v-for="button in buttons" :key="button.id" :id="button.id" class="juanzhouBtn pop-up-button" @click="handleClick(button.id)">
         <div class="container">
           <img :src="button.image" class="eatway">
         </div>
       </button>
-    </div>
+    </div> -->
+    <button v-for="button in buttons" :key="button.id" :id="button.id" :class="button.class" @click="handleClick(button.id)">
+      <img :src="button.image" class="eatway">
+    </button>
   </template>
   
   <script>
