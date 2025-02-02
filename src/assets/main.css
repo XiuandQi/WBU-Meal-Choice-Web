@@ -34,7 +34,22 @@ body {
   margin: auto;
   padding-top: 115px;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
+
+.juanzhouBtnDiv_move {
+  animation: juanzhouBtnDiv_move 0.5s ease-in-out;
+}
+@keyframes juanzhouBtnDiv_move {
+  from {
+    top: 1000px;
+  }
+  to {
+    to: 100px;
+  }
+}
+
+
 
 .juanzhouBtn {
   background: transparent;
@@ -207,3 +222,70 @@ body {
     left: 0px;
   }
 }
+
+/* Screen Div */
+/* screenDiv show */
+.right-go-on {
+  animation: right-go-on 1s ease-in-out;
+}
+
+@keyframes right-go-on {
+  from {
+    right: -1500px;
+  }
+  to {
+    right: 100px;
+  }
+}
+.ScreenDiv {
+  position: absolute;
+  width: 1300px;
+  height: 600px;
+  border-radius: 20px;
+  color: black;
+  right: 100px;
+  top: 200px;
+  border: 10px, solid, rgb(0, 0, 0, 0.5);
+}
+
+.choiceBtn{
+  background-color: transparent;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.choiceBtnImg{
+  width: 80%;
+  height: 80%;  
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.choiceBtnDiv{
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  left: 500px;
+  bottom: 20px;
+}
+
+.choiceBtnDiv::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.choiceBtnDiv:hover::before{
+  width: 100%;
+}
+

@@ -1,0 +1,10 @@
+.firstMealImage{
+    width: 5%;
+    height: 5%;
+}
+
+.firstMealDiv{
+    position: relative;
+    left: 580px;
+    top: 10px;
+}

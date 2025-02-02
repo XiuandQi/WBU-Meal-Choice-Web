@@ -1,5 +1,5 @@
 <template>
-    <div class="juanzhouDiv" id="juanzhouDiv">
+    <div class="juanzhouDiv juanzhouBtnDiv_move" id="juanzhouDiv">
       <button class="juanzhouBtn" id="first_floorBtn" @click="handleClick('first_floorBtn')">
         <div class="container">
           <img src="../assets/image/first_floor.png" class="eatway">
