@@ -1,8 +1,10 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
-        <div class="firstMealDiv">
-            <img :src="currentImage" class="firstMealImage">
-        </div>
+        <transition name="FirstImageDiv">
+            <div class="firstMealDiv" v-if="showImagesDiv">
+                <img :src="currentImage" class="firstMealImage">
+            </div>
+        </transition>
         <div class="choiceBtnDiv">
             <button @click="showRandomImage" class="choiceBtn">
                 <img src="../assets/image/choice_btn.png" class="choiceBtnImg">
@@ -15,6 +17,7 @@ export default {
     name: 'FirstFloorDiv',
     data(){
         return{
+            showImagesDiv:false,
             images:[
                 'src/assets/image/firstfloor/zizhu_first.png',
                 'src/assets/image/firstfloor/tiantiantese.png',
@@ -27,6 +30,7 @@ export default {
         showRandomImage(){
             const randomIndex = Math.floor(Math.random() * this.images.length);
             this.currentImage = this.images[randomIndex];
+            this.showImagesDiv = true;
         }
     }
 }

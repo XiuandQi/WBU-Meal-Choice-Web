@@ -18,6 +18,12 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.move-and-shrink {
+  position: absolute;
+  text-align: center;
+  transform: translate(-300px, -80px) scale(0.5);
+}
+
 .TitleImg {
   max-width: 100%;
   max-height: 100%;
@@ -86,12 +92,6 @@ body {
   width: 210px;
   height: 71px;
   text-align: center;
-}
-
-.move-and-shrink {
-  position: absolute;
-  text-align: center;
-  transform: translate(-300px, -80px) scale(0.5);
 }
 
 .LeftBtnFirst {

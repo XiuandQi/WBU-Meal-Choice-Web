@@ -1,0 +1,32 @@
+.AllIndexDiv-leave-active{
+    animation: AllIndexDiv 0.5s ease-in-out;
+}
+@keyframes AllIndexDiv {
+    from {
+        top: 100px;
+    }
+    to {
+        top: 1000px;
+    }
+}
+
+.AllScreenDiv1-leave-active{
+    animation: AllScreenDiv 0.5s ease-in-out;
+}
+.AllScreenDiv2-leave-active{
+    animation: AllScreenDiv 0.5s ease-in-out;
+}
+.AllScreenDiv3-leave-active{
+    animation: AllScreenDiv 0.5s ease-in-out;
+}
+.AllScreenDiv4-leave-active{
+    animation: AllScreenDiv 0.5s ease-in-out;
+}
+@keyframes AllScreenDiv {
+    from {
+        right: 100px;
+    }
+    to {
+        right: -1500px;
+    }
+}
