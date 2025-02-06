@@ -1,0 +1,52 @@
+.OutSchoolDiv{
+    position: relative;
+    display: inline-block;
+    border: 5px solid rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    height: 300px;
+    width: 300px;
+    margin: auto 100px;
+    top: 60px;
+    left: 100px;
+    text-align: center;
+    line-height: 100%;
+    font-family: 'BlackMyth';
+    font-size: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.OutSchoolDiv span{
+    vertical-align: middle;
+    line-height: 300px;
+}
+
+.OutSchoolDiv:hover{
+    transform: scale(0.9);
+    background-color: black;
+    border: 5px solid skyblue;
+    color: white;
+}
+
+.HiddenTips{
+    position: relative;
+    border-radius: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.9);
+    text-align: center;
+    left: 200px;
+    height: 100px;
+    width: 810px;
+    bottom: -80px;
+    font-family: 'BlackMyth';
+    font-size: 60px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.HiddenTips span{
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.HiddenTips_show{
+    opacity: 1;
+}
