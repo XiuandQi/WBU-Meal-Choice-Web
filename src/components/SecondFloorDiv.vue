@@ -24,7 +24,7 @@
         </div>
         <div class="secondFloorRestar">
             <button @click="RestartSelect" class="SFRestarBtn">
-                <img src="../assets/image/restartbtn.png" class="restartIcon">
+              <img src="../assets/image/restartbtn.png" class="restartIcon">
             </button>
         </div>
         <button @click="selectRandomDiv" class="choiceBtn1">
