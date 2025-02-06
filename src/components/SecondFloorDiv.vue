@@ -27,13 +27,9 @@
                 <img src="../assets/image/restartbtn.png" class="restartIcon">
             </button>
         </div>
-        <div class="choiceBtnDiv">
-            <button @click="selectRandomDiv" class="choiceBtn">
-              <div class="choiceBtnWord">
-                抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
-              </div>
-            </button>
-        </div>
+        <button @click="selectRandomDiv" class="choiceBtn1">
+          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
+        </button>
     </div>
 </template>
 

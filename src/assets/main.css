@@ -251,41 +251,22 @@ body {
   border: 10px, solid, rgb(0, 0, 0, 0.5);
 }
 
-.choiceBtn{
+.choiceBtn1{
   background-color: transparent;
+  position: absolute;
   outline: none;
-  border: none;
-  width: auto;
-  height: auto;
-  text-align: center;
-}
-
-.choiceBtnWord{
-  text-align: center;
+  border: 5px solid transparent;
+  padding: 0;
+  border-radius: 20px;
   font-family: 'BlackMyth';
-  font-size: 50px ;
-}
-
-.choiceBtnDiv{
-  position: absolute;
+  font-size: 45px;
   width: auto;
   height: auto;
-  border-radius: 20px;
-  left: 500px;
+  left: 510px;
   bottom: 10px;
-}
-
-.choiceBtnDiv::before{
-  content: '';
-  position: absolute;
-  background-color: rgb(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
-  width: 0;
-  height: 100%;
-  border-radius: 20px;
 }
 
-.choiceBtnDiv:hover::before{
-  width: 100%;
+.choiceBtn1:hover{
+  border: 5px solid rgb(0, 0, 0, 0.9);
 }
-

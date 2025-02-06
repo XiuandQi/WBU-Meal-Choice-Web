@@ -1,11 +1,9 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
         <div>outschool</div>
-        <div class="choiceBtnDiv">
-            <button @click="" class="choiceBtn">
-                <img src="../assets/image/choice_btn.png" class="choiceBtnImg">
-            </button>
-        </div>
+        <button @click="" class="choiceBtn1">
+          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
+        </button>
     </div>
 </template>
 <script>

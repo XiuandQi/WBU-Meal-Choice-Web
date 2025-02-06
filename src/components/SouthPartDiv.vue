@@ -1,11 +1,9 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
         <div style="font-family: 'BlackMyth';">south</div>
-        <div class="choiceBtnDiv">
-            <button @click="" class="choiceBtn">
-                抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
-            </button>
-        </div>
+        <button @click="" class="choiceBtn1">
+          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
+        </button>
     </div>
 </template>
 <script>
