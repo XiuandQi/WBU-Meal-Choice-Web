@@ -1,13 +1,13 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
-        <transition name="FirstImageDiv">
-            <div class="firstMealDiv" v-if="showImagesDiv">
-                <img :src="currentImage" class="firstMealImage">
-            </div>
-        </transition>
+        <div class="firstMealDiv">
+             {{ currentWords }}
+        </div>
         <div class="choiceBtnDiv">
             <button @click="showRandomImage" class="choiceBtn">
-                <img src="../assets/image/choice_btn.png" class="choiceBtnImg">
+                <div class="choiceBtnWord">
+                    抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
+                </div>
             </button>
         </div>
     </div>
@@ -17,20 +17,18 @@ export default {
     name: 'FirstFloorDiv',
     data(){
         return{
-            showImagesDiv:false,
-            images:[
-                'src/assets/image/firstfloor/zizhu_first.png',
-                'src/assets/image/firstfloor/tiantiantese.png',
-                'src/assets/image/firstfloor/minzuchuangkou.png',
+            FFMW:[
+                '自助餐',
+                '天天价特色菜',
+                '民族窗口'
             ],
-            currentImage: '',
+            currentWords: '',
         }
     },
     methods:{
         showRandomImage(){
-            const randomIndex = Math.floor(Math.random() * this.images.length);
-            this.currentImage = this.images[randomIndex];
-            this.showImagesDiv = true;
+            const randomIndex = Math.floor(Math.random() * this.FFMW.length);
+            this.currentWords = this.FFMW[randomIndex];
         }
     }
 }

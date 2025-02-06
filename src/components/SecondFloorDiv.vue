@@ -8,7 +8,7 @@
                 class="secondFloorFooddiv" 
                 :class="{ 'selected': selectedId === id, 'hidden': selectedId && selectedId !== id }"
             >
-                <img :src="getImageSrc(index)" class="secondFloorFoodImg">
+                 {{ getMealWords(index) }}
             </div>
         </div>
         <div class="secondFloorFoodDiv">
@@ -19,7 +19,7 @@
                 class="secondFloorFooddiv" 
                 :class="{ 'selected': selectedId === id, 'hidden': selectedId && selectedId !== id }"
             >
-                <img :src="getImageSrc(index + 8)" class="secondFloorFoodImg">
+                 {{ getMealWords(index + 8) }}
             </div>
         </div>
         <div class="secondFloorRestar">
@@ -29,7 +29,9 @@
         </div>
         <div class="choiceBtnDiv">
             <button @click="selectRandomDiv" class="choiceBtn">
-                <img src="../assets/image/choice_btn.png" class="choiceBtnImg">
+              <div class="choiceBtnWord">
+                抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
+              </div>
             </button>
         </div>
     </div>
@@ -56,15 +58,13 @@ export default {
     RestartSelect() {
       this.selectedId = null;
     },
-
-    getImageSrc(index) {
-      const images = [
-        'xiangmixianshen.png', 'jiangxinlu.png', 'hejialihancan.png', 'sanzimenguo.png',
-        'xiongjiao.png', 'mankouxiangxiaowancai.png', 'moxiaonanshuijiao.png', 'tudounibanfan.png',
-        'qingshizuyi.png', 'huntun.png', 'lanzhoulamian.png', 'haochilaochaofan.png',
-        'hunanxiaochaofan.png', 'zhangliangmalatang.png', 'laomianguan.png', 'mianshizuyi.png'
+    getMealWords(index){
+      const SFMW = [
+        '鄉米先生','匠心卤','合利家韩餐','三汁焖锅','熊叫','满口香小碗菜','莫小喃水饺',
+        '土豆泥拌饭','轻食主义','馄饨','兰州拉面','好吃佬炒饭','湖南小炒饭','张亮麻辣烫',
+        '捞面馆','面食主义'
       ];
-      return images[index].startsWith('/') ? images[index] : `/src/assets/image/secondfloor/${images[index]}`;
+      return SFMW[index];
     }
   }
 };

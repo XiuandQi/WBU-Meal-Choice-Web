@@ -1,10 +1,8 @@
-.firstMealImage{
-    width: 5%;
-    height: 5%;
-}
-
 .firstMealDiv{
     position: relative;
-    left: 580px;
+    left: 530px;
     top: 10px;
+    font-family: 'BlackMyth';
+    font-size: 80px;
+    writing-mode: vertical-lr;
 }

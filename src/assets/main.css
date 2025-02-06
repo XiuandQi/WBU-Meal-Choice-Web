@@ -4,6 +4,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: rgb(249, 246, 239, 1);
+  user-select: none;
 }
 
 .MainTitle {
@@ -13,20 +14,15 @@ body {
   border: 0;
   padding: 0;
   text-align: center;
-  display: flex;
   margin: auto;
   transition: all 1s ease-in-out;
+  font-family: 'BlackMyth';
 }
 
 .move-and-shrink {
   position: absolute;
   text-align: center;
   transform: translate(-300px, -80px) scale(0.5);
-}
-
-.TitleImg {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .juanzhouDiv {
@@ -86,12 +82,8 @@ body {
   width: 300px;
   height: auto;
   padding: 55px;
-}
-
-.eatway {
-  width: 210px;
-  height: 71px;
-  text-align: center;
+  font-family: 'BlackMyth';
+  font-size: 90px;
 }
 
 .LeftBtnFirst {
@@ -104,6 +96,9 @@ body {
   position: fixed;
   cursor: pointer;
   top: 150px;
+  font-family: 'BlackMyth';
+  font-size: 60px;
+  white-space: pre;
 }
 
 .LeftBtnFirst:hover {
@@ -120,6 +115,9 @@ body {
   position: fixed;
   cursor: pointer;
   top: 250px;
+  font-family: 'BlackMyth';
+  font-size: 60px;
+  white-space: pre;
 }
 
 .LeftBtnSecond:hover {
@@ -136,6 +134,9 @@ body {
   position: fixed;
   cursor: pointer;
   top: 350px;
+  font-family: 'BlackMyth';
+  font-size: 60px;
+  white-space: pre;
 }
 
 .LeftBtnThree:hover {
@@ -191,8 +192,10 @@ body {
   position: absolute;
   width: 163px;
   height: 60px;
-  top: 8px;
+  top: -5px;
   right: 20px;
+  font-family: 'BlackMyth';
+  font-size: 70px;
   display: none;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -250,20 +253,18 @@ body {
 
 .choiceBtn{
   background-color: transparent;
-  border-radius: 20px;
   outline: none;
   border: none;
   width: auto;
   height: auto;
   text-align: center;
+  user-select: none;
 }
 
-.choiceBtnImg{
-  width: 80%;
-  height: 80%;  
-  margin: auto;
+.choiceBtnWord{
   text-align: center;
-  position: relative;
+  font-family: 'BlackMyth';
+  font-size: 50px ;
 }
 
 .choiceBtnDiv{
@@ -272,7 +273,7 @@ body {
   height: auto;
   border-radius: 20px;
   left: 500px;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .choiceBtnDiv::before{

@@ -5,7 +5,10 @@
           <img src="../assets/image/gobackicon2.png" class="gobackIcon">
         </span>
         <span>
-          <img src="../assets/image/goback.png" class="getbackWord">
+          <div class="getbackWord">
+            返&nbsp;&nbsp;回
+          </div>
+          <!-- <img src="../assets/image/goback.png" class="getbackWord"> -->
         </span>
       </button>
     </div>

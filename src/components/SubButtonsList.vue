@@ -1,7 +1,7 @@
 <template>
   <div id="leftButtons">
     <button v-for="button in buttons" :key="button.id" :id="button.id" :class="button.class" @click="handleClick(button.id)">
-      <img :src="button.image" class="eatway">
+      {{ button.words }}
     </button>
   </div>
   </template>

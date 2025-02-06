@@ -1,4 +1,5 @@
 import './assets/main.css'
+import '@/assets/text/text.css'
 import './assets/first_div.css'
 import './assets/showActive.css'
 import './assets/second_div.css'

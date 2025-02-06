@@ -89,30 +89,30 @@ export default {
       switch (clickedButtonId) {
         case IndexButtonId[0]:
           newButtons = [
-            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnFirst pop-up-button' },
-            { id: 'south_partBtn', image: 'src/assets/image/south_part.png' ,class: 'LeftBtnSecond pop-up-button' },
-            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png' ,class: 'LeftBtnThree pop-up-button' }
+            { id: 'second_floorBtn',class: 'LeftBtnFirst pop-up-button', words:'二          楼' },
+            { id: 'south_partBtn', class: 'LeftBtnSecond pop-up-button', words:'南          区' },
+            { id: 'out_schoolBtn', class: 'LeftBtnThree pop-up-button', words:'校          外' }
           ];
           break;
         case IndexButtonId[1]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
-            { id: 'south_partBtn', image: 'src/assets/image/south_part.png',class: 'LeftBtnSecond pop-up-button' },
-            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png',class: 'LeftBtnThree pop-up-button' }
+            { id: 'first_floorBtn', class: 'LeftBtnFirst pop-up-button', words:'一          楼' },
+            { id: 'south_partBtn', class: 'LeftBtnSecond pop-up-button', words:'南          区' },
+            { id: 'out_schoolBtn', class: 'LeftBtnThree pop-up-button', words:'校          外' }
           ];
           break;
         case IndexButtonId[2]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
-            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnSecond pop-up-button' },
-            { id: 'out_schoolBtn', image: 'src/assets/image/out_school.png',class: 'LeftBtnThree pop-up-button' }
+            { id: 'first_floorBtn', class: 'LeftBtnFirst pop-up-button', words:'一          楼' },
+            { id: 'second_floorBtn', class: 'LeftBtnSecond pop-up-button', words:'二          楼' },
+            { id: 'out_schoolBtn', class: 'LeftBtnThree pop-up-button', words:'校          外' }
           ];
           break;
         case IndexButtonId[3]:
           newButtons = [
-            { id: 'first_floorBtn', image: 'src/assets/image/first_floor.png',class: 'LeftBtnFirst pop-up-button' },
-            { id: 'second_floorBtn', image: 'src/assets/image/second_floor.png',class: 'LeftBtnSecond pop-up-button' },
-            { id: 'south_partBtn', image: 'src/assets/image/south_part.png',class: 'LeftBtnThree pop-up-button' }
+            { id: 'first_floorBtn', class: 'LeftBtnFirst pop-up-button', words:'一          楼' },
+            { id: 'second_floorBtn', class: 'LeftBtnSecond pop-up-button', words:'二          楼' },
+            { id: 'south_partBtn', class: 'LeftBtnThree pop-up-button', words:'南          区' }
           ];
           break;
       }
