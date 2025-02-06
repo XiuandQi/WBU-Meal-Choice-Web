@@ -27,6 +27,6 @@
 
 ## 已知BUG
 1. 抽选按钮会存在不灵敏的情况，正在想办法修复<br>
-    一楼可以`document.getElementsByTagName("button")[4].click()`
-    二楼可以`document.getElementsByTagName("button")[5].click()`
+    一楼可以`document.getElementsByTagName("button")[4].click()`<br>
+    二楼可以`document.getElementsByTagName("button")[5].click()`<br>
     进行抽选
