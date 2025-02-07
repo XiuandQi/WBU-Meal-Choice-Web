@@ -100,6 +100,7 @@ body {
   font-size: 60px;
   white-space: pre;
   backdrop-filter: blur(5px);
+  z-index: 2000px;
 }
 
 .LeftBtnFirst:hover {
@@ -120,6 +121,7 @@ body {
   font-size: 60px;
   white-space: pre;
   backdrop-filter: blur(5px);
+  z-index: 2000px;
 }
 
 .LeftBtnSecond:hover {
@@ -140,6 +142,7 @@ body {
   font-size: 60px;
   white-space: pre;
   backdrop-filter: blur(5px);
+  z-index: 2000px;
 }
 
 .LeftBtnThree:hover {
@@ -174,6 +177,7 @@ body {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
+  z-index: 2000px;
 }
 
 .gobackBtn:hover {
