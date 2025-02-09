@@ -1,9 +1,9 @@
 <template>
     <div class="MainTitle" id="mainTitle">
-      <div style="font-size: 180px;">
+      <div class="MainTitle1">
        舌尖上的武商院
       </div>
-      <div style="font-size: 100px ;">
+      <div class="MainTitle2">
        A BITE OF WBU
       </div>
     </div>

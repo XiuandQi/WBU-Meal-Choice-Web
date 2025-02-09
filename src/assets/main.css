@@ -19,6 +19,14 @@ body {
   font-family: 'BlackMyth';
 }
 
+.MainTitle1{
+  font-size: 180px;
+}
+
+.MainTitle2{
+  font-size: 100px;
+}
+
 .move-and-shrink {
   position: absolute;
   text-align: center;
