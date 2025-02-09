@@ -24,14 +24,15 @@
 目前完成一楼,二楼，南区（没怎么去过）,校外
 
 ## 关于作者
-非专业学生，凭兴趣开发，若有错误，请海涵
+非专业学生，凭兴趣开发，若有错误，请海涵<br>
+感谢[cui0v0](https://github.com/cui0v0)的帮助
 
 ## 已知BUG
 1. ~~抽选按钮会存在不灵敏的情况，正在想办法修复<br>
     一楼可以`document.getElementsByTagName("button")[4].click()`<br>
     二楼可以`document.getElementsByTagName("button")[5].click()`<br>
     进行抽选<br>~~
-2. 平移动画会闪现，有待解决<br>
+2. ~~平移动画会闪现，有待解决~~<br>
 3. 左侧的按钮list，没有消失动画
 4. 目前只是配PC端
 5. ~~打包出来什么都不显示~~
