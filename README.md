@@ -25,7 +25,7 @@
 
 ## 关于作者
 非专业学生，凭兴趣开发，若有错误，请海涵<br>
-感谢[cui0v0](https://github.com/cui0v0)的帮助
+感谢`[cui0v0](https://github.com/cui0v0)`的帮助
 
 ## 已知BUG
 1. ~~抽选按钮会存在不灵敏的情况，正在想办法修复<br>
