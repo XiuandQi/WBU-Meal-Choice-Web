@@ -7,6 +7,7 @@
 ## 技术介绍
 使用`Vue`框架开发</br>
 内部字体为`汉仪黑神话字体`</br>
+使用`GitHub Pages Action`进行部署<br>
 ~~尝试用`HBuiderX`转换成APP~~
 
 ## 如何使用？
