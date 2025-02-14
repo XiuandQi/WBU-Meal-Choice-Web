@@ -47,7 +47,6 @@ body {
   padding-top: 115px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  display: flex;
   justify-content: space-evenly;
 }
 
@@ -212,7 +211,6 @@ body {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
-  z-index: 2000px;
 }
 
 .gobackBtn:hover {

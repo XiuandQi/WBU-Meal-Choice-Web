@@ -1,0 +1,173 @@
+/* pingban */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .MainTitle1{
+        font-size: 80px;
+    }
+
+    .MainTitle2{
+        font-size: 45px;
+    }
+
+    .MainTitle{
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+    }
+
+    .move-and-shrink {
+        scale: 0.5;
+        left: 0%;
+        translate: 0 0;
+        transform-origin: left top;
+    }
+
+    .container {
+        width: auto;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .LeftBtnFirst{
+        opacity: 0;
+    }
+
+    .LeftBtnSecond{
+        opacity: 0;
+    }
+
+    .LeftBtnThree{
+        opacity: 0;
+    }
+
+    .gobackBtnDiv{
+        top: auto;
+        bottom: 20px;
+        scale: 0.8;
+    }
+
+    .right-go-on {
+        animation: right-go-on 1s ease-in-out;
+    }
+      
+    @keyframes right-go-on {
+        from {
+          right: -1500px;
+        }
+        to {
+          right: -20%;
+        }
+    }
+    
+    .ScreenDiv{
+        scale: 0.5;
+        top: 0%;
+        right: -20%;
+    }
+
+    .AllScreenDiv1-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv2-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv3-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv4-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    @keyframes AllScreenDiv {
+        from {
+            right: -20%;
+        }
+        to {
+            right: -1500px;
+        }
+    }
+}
+
+/* Phone */
+@media screen and (orientation: portrait) and (max-width: 767px) {
+    .MainTitle1{
+        font-size: 50px;
+    }
+
+    .MainTitle2{
+        font-size: 30px;
+    }
+
+    .juanzhouDiv{
+        display: block;
+    }
+
+    .container {
+        width: auto;
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    .LeftBtnFirst{
+        opacity: 0;
+    }
+
+    .LeftBtnSecond{
+        opacity: 0;
+    }
+
+    .LeftBtnThree{
+        opacity: 0;
+    }
+
+    .gobackBtnDiv{
+        top: auto;
+        bottom: 20px;
+        scale: 0.5;
+    }
+
+    .ScreenDiv{
+        scale: 0.3;
+        right: -104%;
+    }
+
+    @keyframes right-go-on {
+        from {
+          right: -1500px;
+        }
+        to {
+          right: -104%;
+        }
+    }
+
+    .AllScreenDiv1-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv2-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv3-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv4-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    @keyframes AllScreenDiv {
+        from {
+            right: -104%;
+        }
+        to {
+            right: -1500px;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 767px){
+    .ScreenDiv{
+        scale: 0.5;
+        top: -15%;
+    }
+
+    .gobackBtnDiv{
+        scale: 0.5  ;
+    }
+    
+}
