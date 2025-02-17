@@ -203,15 +203,15 @@
     }
 
     .LeftBtnFirst{
-        scale: 0.9;
+        opacity: 0;
     }
 
     .LeftBtnSecond{
-        scale: 0.9;
+        opacity: 0;
     }
 
     .LeftBtnThree{
-        scale: 0.9;
+        opacity: 0;
     }
 
     .gobackBtnDiv{
