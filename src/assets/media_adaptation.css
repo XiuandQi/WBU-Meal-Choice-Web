@@ -260,3 +260,90 @@
         }
     }
 }
+
+@media screen and (min-width: 1116px) and (max-width: 1365px) {
+    .MainTitle1{
+        font-size: 80px;
+    }
+
+    .MainTitle2{
+        font-size: 45px;
+    }
+
+    .MainTitle{
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+    }
+
+    .move-and-shrink {
+        scale: 0.5;
+        left: 0%;
+        translate: 0 0;
+        transform-origin: left top;
+    }
+
+    .container {
+        width: auto;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .LeftBtnFirst{
+        scale: 0.7;
+    }
+
+    .LeftBtnSecond{
+        scale: 0.7;
+    }
+
+    .LeftBtnThree{
+        scale: 0.7;
+    }
+
+    .gobackBtnDiv{
+        top: auto;
+        bottom: 20px;
+        scale: 0.7;
+    }
+
+    .right-go-on {
+        animation: right-go-on 1s ease-in-out;
+    }
+      
+    @keyframes right-go-on {
+        from {
+          right: -1500px;
+        }
+        to {
+          right: -10%;
+        }
+    }
+    
+    .ScreenDiv{
+        scale: 0.7;
+        top: 0%;
+        right: -10%;
+    }
+
+    .AllScreenDiv1-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv2-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv3-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    .AllScreenDiv4-leave-active{
+        animation: AllScreenDiv 0.5s ease-in-out;
+    }
+    @keyframes AllScreenDiv {
+        from {
+            right: -10%;
+        }
+        to {
+            right: -1500px;
+        }
+    }
+}

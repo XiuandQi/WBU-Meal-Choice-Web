@@ -24,7 +24,7 @@
 }
 @keyframes AllScreenDiv {
     from {
-        right: 100px;
+        right: 7%;
     }
     to {
         right: -1500px;
