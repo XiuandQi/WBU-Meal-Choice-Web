@@ -1,56 +1,43 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
-        <div>
+        <div class="flexColumn">
             <div
-                v-for="(card, index) in cards.slice(0,5)"
-                :key="index"
-                :id="card"
+                v-for="(value, key) in floors_data.slice(0,5)"
+                :key="key"
+                :id="value"
                 class="SouthFloorDiv"
-                :class="{'choice':choiceId === card,'hidden':choiceId && choiceId !== card}"
+                :class="{'choice':choiceId === key,'hidden':choiceId!=null && choiceId !== key}"
             >
-            {{ getMealCards(index) }}
-            <div style="font-size: 25px;">
-                <br>
-                {{getMealCardsHidden(index)}}
+            {{value}}
+                <div style="font-size: 25px;">
+                    <br>
+                    {{getMealCardsHidden(key)}}
+                </div>
             </div>
+            <div class="SouthFloorDiv" 
+                :class="{
+                    'display_none':choiceId === null,'hidden':choiceId!=null && choiceId !== key
+                }">
             </div>
         </div>
-        <div class="secondFloorRestar">
-            <button @click="RestartChoice" class="SFRestarBtn">
-              <img src="../assets/image/restartbtn.png" class="restartIcon">
-            </button>
-        </div>
-        <button @click="choiceRandomCard" class="choiceBtn1">
-          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
-        </button>
+        <RollComponents :stores_data="floors_data" @RandomRoll="selectedIndexSync" @ResetSelection="selectedIndexSync"/>
     </div>
 </template>
 <script>
+import RollComponents from './RollComponents.vue';
+import stores_data from '../data/stores_data.json';
 export default {
   name: 'SouthPartDiv',
+  components: {
+    RollComponents,
+  },
   data(){
-        return{
-            choiceId: null,
-            cards: [
-                'SouthFloor1', 'SouthFloor2', 'SouthFloor3', 'SouthFloor4', 'SouthFloor5',
-            ]
-
+    return{
+        choiceId: null,
+        floors_data: stores_data.south_area,
     }
   },
   methods:{
-    choiceRandomCard(){
-        const randomIndex = Math.floor(Math.random() * this.cards.length);
-        this.choiceId = this.cards[randomIndex];
-    },
-    RestartChoice(){
-        this.choiceId = null;
-    },
-    getMealCards(index){
-        const NFMW = [
-            '一          楼','二          楼','三          楼','四          楼','五          楼'
-        ];
-        return NFMW[index];
-    },
     getMealCardsHidden(index){
         const NFMWH = [
             '一楼的面好像不错',
@@ -60,8 +47,10 @@ export default {
             '五楼是不是有火锅'
         ];
         return NFMWH[index];
+    },
+    selectedIndexSync(index){
+        this.choiceId = index;
     }
-    
   }
 }
 </script>

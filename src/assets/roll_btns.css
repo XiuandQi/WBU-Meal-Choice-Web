@@ -1,0 +1,46 @@
+.rollDiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .SFResetBtn{
+        position: absolute;
+        left: 0;
+        margin-left: 0.52rem;
+        background-color: transparent;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        width: 54px;
+        height: 54px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .resetIcon{
+        width: 92%;
+        height: 72%;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: rotate(10deg);
+        }
+    }
+    .rollBtn{
+        background-color: transparent;
+        position: relative;
+        border: 5px solid transparent;
+        border-radius: 20px;
+        font-family: 'BlackMyth';
+        font-size: 45px;
+        transition: border 0.5s ease-in-out;
+        letter-spacing: 3.5rem;
+        & span{
+            letter-spacing: 0;
+        }
+        &:hover{
+          border: 5px solid rgb(0, 0, 0, 0.9);
+        }
+    }
+}
