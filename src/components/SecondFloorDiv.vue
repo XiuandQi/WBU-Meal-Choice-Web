@@ -1,13 +1,22 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
         <div class="FoodsDivFrame">
-            <div 
-                v-for="(value,key,index) in stores_data" 
-                :key="key" 
-                :id="index" 
-                class="secondFloorFooddiv" 
-                :class="{ 'selected': selectedIndex === key, 'hidden': selectedIndex!=null && selectedIndex !== key }"
-            >{{value}}</div>
+          <TransitionGroup name="FoodDivs">
+              <div 
+                  v-for="(value,key,index) in stores_data.slice(0,8)" 
+                  :key="key" 
+                  :id="index" 
+                  class="secondFloorFooddiv" 
+                  :class="{ 'selected': selectedIndex === key, 'hidden': selectedIndex!=null && selectedIndex !== key }"
+              >{{value}}</div>
+              <div 
+                  v-for="(value,key,index) in stores_data.slice(8,16)" 
+                  :key="key" 
+                  :id="index" 
+                  class="secondFloorFooddiv" 
+                  :class="{ 'selected': selectedIndex === key+8, 'hidden': selectedIndex!=null && selectedIndex !== key+8 }"
+              >{{value}}</div>
+          </TransitionGroup>
         </div>
         <RollComponents :stores_data="stores_data" @RandomRoll="selectedIndexSync" @ResetSelection="selectedIndexSync"/>
     </div>

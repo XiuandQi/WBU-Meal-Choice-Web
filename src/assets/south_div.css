@@ -14,16 +14,15 @@
     overflow: hidden;
     transform-origin: center center;
 }
-
 .SouthFloorDiv.choice{
     position: absolute;
     transform: scale(2);
     z-index: 100;
     backdrop-filter: blur(10px);
-}
-.SouthFloorDiv.choice:hover{
+  }
+  .SouthFloorDiv.choice:hover{
     height: 150px;
-}
+  }
 .SouthFloorDiv.hidden{
     transform: scale(0.5);
     opacity: 0;

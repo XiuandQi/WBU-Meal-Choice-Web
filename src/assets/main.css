@@ -3,7 +3,9 @@
   --leftBtnsHeight: 76.58px;
   --MainTitle1FontSize: 180px;
   --MainTitle2FontSize: 100px;
-
+  --secondFloorFooddivWidth: 3rem;
+  --secondFloorFooddivHeight: 245px;
+  --secondFloorFooddivFontSize: 2rem;
   --leftBtnsBorderRadius: 20px;
   --leftBtnsFontSize: 60px;
   --leftBtnsBackground: rgb(0, 0, 0, 0.5);
@@ -184,5 +186,5 @@ body {
   align-items: center;
 }
 .display_none{
-  display: none;
+  display: none!important;
 }
