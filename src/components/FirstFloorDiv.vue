@@ -1,7 +1,9 @@
 <template>
     <div id="screenDiv" class="ScreenDiv right-go-on">
         <div class="firstMealDiv">
-             {{ currentWords }}
+            <div>
+                {{ currentWords }}
+            </div>
         </div>
         <button @click="showRandomImage" class="choiceBtn1">
           抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
