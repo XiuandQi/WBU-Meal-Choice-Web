@@ -1,16 +1,37 @@
 /* Phone */
 @media screen and (orientation: portrait) and (max-width: 767px) {
     :root{
-        --MainTitle1FontSize: 70px;
-        --MainTitle2FontSize: 40px;
+        --MainTitle1FontSize: 13vw;
+        --MainTitle2FontSize: 9vw;
     }
-
-
+    .ScreenDiv{
+        position: relative;
+        backdrop-filter: blur(10px);
+    }
+    .MainTitle{
+        word-break: keep-all;
+        .MainTitle1, .MainTitle{
+            word-break: keep-all;
+        }
+    }
     .juanzhouDiv{
-        display: grid;
-        margin: 50% auto;
+        backdrop-filter: blur(10px);
+        display: flex;
+        /* margin: 50% auto; */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: absolute;
+        bottom: 1vh;
     }
-
+    @keyframes juanzhouBtnDiv_move {
+        from {
+          top: 150%;
+        }
+        to {
+          top: 0;
+        }
+    }
     .container {
         width: auto;
         font-size: 60px;
@@ -20,11 +41,21 @@
     .LeftBtn{
         display: none;
     }
-
-    .gobackBtnDiv{
-        scale: 0.7;
+    .OutSchoolDiv{
+        margin: 0.1rem auto;
     }
-
+    .gobackBtn{
+        scale: 0.7;
+        /* height: 76.58px;
+        width: 76.58px; */
+    }
+    .HiddenTips{
+        border-radius: 6vw;
+        line-height: 10vw;
+        span{
+            font-size:6vw;
+        }
+    }
 }
 
 @media screen and (orientation: landscape) and (max-width: 767px){

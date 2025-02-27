@@ -20,7 +20,7 @@
                 }">
             </div>
         </div>
-        <RollComponents :stores_data="floors_data" @Roll="selectedIndexSync" @Reset="selectedIndexSync"/>
+        <RollComponents :stores_data="floors_data" @roll="selectedIndexSync" @reset="selectedIndexSync"/>
     </div>
 </template>
 <script>

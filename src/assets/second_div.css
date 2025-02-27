@@ -23,7 +23,7 @@
 }
 
 .secondFloorFooddiv.selected {
-    z-index: 1000;
+    z-index: 6;
     backdrop-filter: blur(10px);
     scale: 2;
     position: absolute;

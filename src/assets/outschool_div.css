@@ -13,41 +13,48 @@
     transition: all 0.5s ease-in-out;
     justify-content: center;
     align-items: center;
+    span{
+        vertical-align: middle;
+        line-height: 300px;
+    }
+    &.selected {
+        z-index: 6;
+        backdrop-filter: blur(10px);
+        position: absolute;
+    }
+    &.hidden {
+        scale: 0.5;
+        opacity: 0;
+    }
+    &:hover{
+        transform: scale(0.9);
+        background-color: black;
+        border: 5px solid skyblue;
+        color: white;
+    }
 }
-
-.OutSchoolDiv span{
-    vertical-align: middle;
-    line-height: 300px;
-}
-
-.OutSchoolDiv:hover{
-    transform: scale(0.9);
-    background-color: black;
-    border: 5px solid skyblue;
-    color: white;
-}
-
 .HiddenTips{
     position: relative;
     border-radius: 50px;
     border: 5px solid rgba(0, 0, 0, 0.9);
     text-align: center;
-    left: 200px;
-    top: 45px;
-    margin: 50px 0;
-    width: 810px;
-    bottom: -80px;
+    margin: 1rem auto;
+    max-width: max-content;
+    padding: 0 0.5rem;
     font-family: 'BlackMyth';
     font-size: 60px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+    span{
+        vertical-align: middle;
+    }
 }
-
-.HiddenTips span{
-    vertical-align: middle;
-    line-height: 100px;
-}
-
 .HiddenTips_show{
     opacity: 1;
+}
+.tips-enter-active, .tips-leave-active {
+    margin-top: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.tips-enter-from, .tips-leave-to {
+    margin-top:-20vh;
+    opacity: 0;
 }

@@ -52,7 +52,9 @@ export default {
   methods: {
     handleButtonClick(buttonId) {
       this.showSubButtons = true;
-      document.getElementById('mainTitle').classList.add('move-and-shrink');
+      if(window.innerWidth > 767){
+        document.getElementById('mainTitle').classList.add('move-and-shrink');
+      }
       this.updataButtonVisibility(buttonId);
     },
     handleSubButtonClick(buttonId) {
@@ -73,7 +75,9 @@ export default {
       this.showSecondBtn = false;
       this.showSouthBtn = false;
       this.showOutBtn = false;
-      document.getElementById('mainTitle').classList.remove('move-and-shrink');
+      if(window.innerWidth > 767){
+        document.getElementById('mainTitle').classList.remove('move-and-shrink');
+      }
     },
 
     generateSubButtons(clickedButtonId) {

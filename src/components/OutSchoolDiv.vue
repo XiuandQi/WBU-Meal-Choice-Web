@@ -11,11 +11,13 @@
               >{{value}}</div>
           </TransitionGroup>
         </div>
-        <div class="HiddenTips" v-if="selectedIndex === 1">
-            <span>
-              都校外了，不去吃大餐可惜了吧
-            </span>
+        <Transition name="tips">
+          <div class="HiddenTips" v-if="selectedIndex === 1">
+              <span>
+                都校外了，不去吃大餐可惜了吧
+              </span>
           </div>
+        </Transition>
         <!-- <div>
           <div class="OutSchoolDiv">
             <span>
@@ -32,7 +34,7 @@
         <!-- <div class="rollDiv">
           <button class="rollBtn" @click="showHiddenTips">抽<span>取</span></button>
         </div> -->
-        <RollComponents :stores_data="stores_data" :Roll="selectedIndexSync" :Reset="selectedIndexSync"></RollComponents>
+        <RollComponents :stores_data="stores_data" @roll="selectedIndexSync" @reset="selectedIndexSync" />
     </div>
 </template>
 <script>

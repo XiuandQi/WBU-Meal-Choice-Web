@@ -20,12 +20,12 @@ export default {
     Roll() {
       this.selectedIndex = Math.floor(Math.random() * this.stores_data.length);
       console.log(this.selectedIndex);
-      this.$emit("Roll", this.selectedIndex);
+      this.$emit("roll", this.selectedIndex);
     },
 
     Reset() {
       this.selectedIndex = null;
-      this.$emit("Reset", this.selectedIndex);
+      this.$emit("reset", this.selectedIndex);
     }
   }
 }
