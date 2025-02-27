@@ -1,34 +1,59 @@
+:root{
+  --leftBtnWidth: 10rem;
+  --leftBtnsHeight: 76.58px;
+  --MainTitle1FontSize: 180px;
+  --MainTitle2FontSize: 100px;
+  --secondFloorFooddivWidth: 3rem;
+  --secondFloorFooddivHeight: 245px;
+  --secondFloorFooddivFontSize: 2rem;
+  --leftBtnsBorderRadius: 20px;
+  --leftBtnsFontSize: 60px;
+  --leftBtnsBackground: rgb(0, 0, 0, 0.5);
+  --leftBtnsTransition: left 0.5s ease-in-out;
+  --leftBtnsBorder: none;
+  --leftBtnsOutline: none;
+  --leftBtnsCursor: pointer;
+  --leftBtnsTop: 150px;
+  --leftBtnsWhiteSpace: pre;
+  --leftBtnsBackdropFilter: blur(5px);
+  --leftBtnsZIndex: 2000px;
+  --leftBtnsOverflow: hidden;
+}
+html{
+  width: -webkit-fill-available;
+}
 body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: rgb(249, 246, 239, 1);
   user-select: none;
   color: black;
+  width: 100%;
 }
-
 .MainTitle {
-  position: relative;
+  position: fixed;
   width: max-content;
   left: 50%;
   translate: -50% 0;
+  top: 0;
   text-align: center;
   transition: all 1s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'BlackMyth';
+  backdrop-filter: blur(5px);
+  word-break: keep-all;
+  & .MainTitle1{
+    font-size: var(--MainTitle1FontSize);
+    line-height: var(--MainTitle1FontSize);
+  }
+  & .MainTitle2{
+    font-size: var(--MainTitle2FontSize);
+    line-height: var(--MainTitle2FontSize);
+  }
 }
-
-.MainTitle1{
-  font-size: 180px;
-}
-
-.MainTitle2{
-  font-size: 100px;
-}
-
 .move-and-shrink {
   scale: 0.5;
   left: 0%;
@@ -37,33 +62,26 @@ body {
 }
 
 .juanzhouDiv {
-  width: auto;
-  height: auto;
-  top: 0;
-  border: 0;
-  padding: 0;
-  text-align: center;
+  width: 100%;
   display: flex;
-  margin: auto;
-  padding-top: 115px;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: padding-top 0.5s ease-in-out;
   justify-content: space-evenly;
+  margin: 0 auto;
+  flex-direction: row;
+  margin-top: 55vh;
 }
-
 .juanzhouBtnDiv_move {
   animation: juanzhouBtnDiv_move 0.5s ease-in-out;
 }
 @keyframes juanzhouBtnDiv_move {
   from {
-    top: 1000px;
+    padding-top: 1000px;
   }
   to {
-    to: 100px;
+    padding-top: 0vh;
   }
 }
-
-
 
 .juanzhouBtn {
   background: transparent;
@@ -98,86 +116,6 @@ body {
   font-size: 90px;
 }
 
-.LeftBtnFirst {
-  background: rgb(0, 0, 0, 0.5);
-  border-radius: 20px;
-  left: -150px;
-  width: 240px;
-  transition: left 0.5s ease-in-out;
-  border: none;
-  outline: none;
-  position: fixed;
-  cursor: pointer;
-  top: 150px;
-  font-family: 'BlackMyth';
-  font-size: 60px;
-  white-space: pre;
-  backdrop-filter: blur(5px);
-  z-index: 2000px;
-  overflow: hidden;
-}
-
-.LeftBtnFirst:hover {
-  left: 0px;
-  text-align: center;
-}
-
-.LeftBtnFirst .LeftBtnWords:hover{
-  left: 0px;
-}
-
-.LeftBtnSecond {
-  background: rgb(0, 0, 0, 0.5);
-  border-radius: 20px;
-  left: -150px;
-  transition: left 0.5s ease-in-out;
-  border: none;
-  outline: none;
-  position: fixed;
-  cursor: pointer;
-  top: 250px;
-  font-family: 'BlackMyth';
-  font-size: 60px;
-  white-space: pre;
-  backdrop-filter: blur(5px);
-  z-index: 2000px;
-  overflow: hidden;
-}
-
-.LeftBtnSecond:hover {
-  left: 0px;
-}
-
-.LeftBtnSecond .LeftBtnWords:hover{
-  left: 0px;
-}
-
-.LeftBtnThree {
-  background: rgb(0, 0, 0, 0.5);
-  border-radius: 20px;
-  left: -150px;
-  transition: left 0.5s ease-in-out;
-  border: none;
-  outline: none;
-  position: fixed;
-  cursor: pointer;
-  top: 350px;
-  font-family: 'BlackMyth';
-  font-size: 60px;
-  white-space: pre;
-  backdrop-filter: blur(5px);
-  z-index: 2000px;
-  overflow: hidden;
-}
-
-.LeftBtnThree:hover {
-  left: 0px;
-}
-
-.LeftBtnThree .LeftBtnWords:hover{
-  left: 0px;
-}
-
 .pop-up-button {
   animation: pop-up-animation 0.5s ease-out;
 }
@@ -189,70 +127,6 @@ body {
   to {
     left: -150px;
   }
-}
-
-.LeftBtnWords{
-  position: relative;
-  left: 160px;
-  transition: all 0.5s ease-in-out;
-}
-
-.gobackBtn {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-  height: 76.58px;
-  width: 76.58px;
-  border-radius: 50px;
-  transition: width 0.3s ease-in-out;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(5px);
-}
-
-.gobackBtn:hover {
-  width: 256px;
-}
-
-.gobackBtn .gobackIcon {
-  position: absolute;
-  left: 5px;
-  top: 8px;
-  height: 60px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.gobackBtn:hover .gobackIcon {
-  transform: translateX(0);
-}
-
-.gobackBtn .getbackWord {
-  position: absolute;
-  width: 163px;
-  height: 60px;
-  top: -5px;
-  right: 20px;
-  font-family: 'BlackMyth';
-  font-size: 70px;
-  display: none;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-}
-
-.gobackBtn:hover .getbackWord {
-  display: inline;
-  opacity: 1;
-}
-
-.gobackBtnDiv {
-  width: auto;
-  height: auto;
-  top: 450px;
-  position: fixed;
 }
 
 .left-go-on {
@@ -279,36 +153,38 @@ body {
     right: -1500px;
   }
   to {
-    right: 7%;
+    right: 0%;
   }
 }
-.ScreenDiv {
-  position: absolute;
-  width: 1300px;
+/* .ScreenDiv {
+  position: relative;
+  max-width: 60rem;
   height: 600px;
   border-radius: 20px;
   color: black;
-  right: 7%;
-  top: 21%;
   border: 10px, solid, rgb(0, 0, 0, 0.5);
-}
-
-.choiceBtn1{
-  background-color: transparent;
-  position: absolute;
-  outline: none;
-  border: 5px solid transparent;
-  padding: 0;
+} */
+.ScreenDiv {
+  position: relative;
+  max-width: 80rem;
+  height: max-content;
   border-radius: 20px;
-  font-family: 'BlackMyth';
-  font-size: 45px;
-  width: auto;
-  height: auto;
-  left: 510px;
-  bottom: 10px;
-  transition: all 0.5s ease-in-out;
+  color: black;
+  border: 10px, solid, rgb(0, 0, 0, 0.5);
+  /* top: 50%;
+  translate: -50% -50%;
+  left: 50%; */
+  min-width: 30rem;
+  margin: 0 auto;
+  margin-top: 18vh;
 }
 
-.choiceBtn1:hover{
-  border: 5px solid rgb(0, 0, 0, 0.9);
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.display_none{
+  display: none!important;
 }

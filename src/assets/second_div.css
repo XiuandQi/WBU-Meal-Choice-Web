@@ -1,69 +1,36 @@
+.FoodsDivFrame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.25rem 0;
+}
 .secondFloorFooddiv {
     display: inline-flex;
+    position: relative;
     align-items: center;
     text-align: center;
-    width: 39px;
-    height: 245px;
+    width: var(--secondFloorFooddivWidth);
+    margin: 0.25rem 2.5vw;
+    height: var(--secondFloorFooddivHeight);
     position: relative;
-    top: 0px;
     border-radius: 120px;
     border: 5px solid rgba(0, 0, 0, 0.9);
-    margin: 0px auto;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,width 0.5s ease-in-out,font-size 0.5s ease-in-out,scale 0.5s ease-in-out;
     opacity: 1;
     font-family: 'BlackMyth';
-    font-size: 30px;
+    font-size: var(--secondFloorFooddivFontSize);
+    /* transform-origin: center bottom; */
 }
 
 .secondFloorFooddiv.selected {
-    transform: scale(2) translate(-50%, -50%);
-    position: fixed;
-    top: 50%;
-    left: 53%;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    scale: 2;
+    position: absolute;
+    margin-top: 9rem;
 }
 
 .secondFloorFooddiv.hidden {
-    transform: scale(0.5);
+    scale: 0.5;
     opacity: 0;
-}
-
-.secondFloorFoodDiv {
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-    padding-top: 5px;
-}
-
-
-.secondFloorRestar{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    text-align: center;
-}
-.SFRestarBtn{
-    background-color: transparent;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    width: 54px;
-    height: 54px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-}
-.SFRestarBtn:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.restartIcon{
-    width: 92%;
-    height: 72%;
-    transition: all 0.5s ease-in-out;
-}
-
-.restartIcon:hover{
-    transform: rotate(10deg);
 }

@@ -1,0 +1,184 @@
+.LeftBtnsContainer{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  top: 50%;
+  translate: 0 -50%;
+  & #leftButtons{
+    display: inline-flex;
+    flex-direction: column;
+    & .LeftBtn {
+      position: relative;
+      background: rgb(0, 0, 0, 0.5);
+      border-radius: 20px;
+      margin-left: calc(var(--leftBtnWidth) / 2 * -1);
+      margin-bottom: 0.3rem;
+      margin-top: 0.3rem;
+      width: var(--leftBtnWidth);
+      transition-property: border-radius, margin-left, letter-spacing;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      border: none;
+      cursor: pointer;
+      font-family: 'BlackMyth';
+      font-size: 60px;
+      white-space: pre;
+      backdrop-filter: blur(5px);
+      overflow: hidden;
+      &:hover {
+        margin-left: 0px;
+        border-radius: 0 20px 20px 0;
+      }
+      & .LeftBtnWords{
+        position: relative;
+        margin-left: calc(var(--leftBtnWidth)/2);
+        transition: all 0.5s ease-in-out;
+        letter-spacing: -0.5rem;
+        text-indent: -1.25rem;
+        &:hover{
+          margin-left: 0;
+          letter-spacing: 2rem;
+          text-indent: 0;
+        }
+      }
+    }
+  }
+  & .gobackBtnDiv {
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
+.gobackBtn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  height: 76.58px;
+  width: 76.58px;
+  border-radius: 50px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.gobackBtn:hover {
+  width: 256px;
+}
+
+.gobackBtn .gobackIcon {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gobackBtn:hover .gobackIcon {
+  transform: translateX(0);
+}
+
+.gobackBtn .getbackWord {
+  position: absolute;
+  width: 163px;
+  height: 60px;
+  top: -5px;
+  right: 20px;
+  font-family: 'BlackMyth';
+  font-size: 70px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.gobackBtn:hover .getbackWord {
+  display: inline;
+  opacity: 1;
+}
+
+/* .LeftBtnFirst {
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    
+    width: 240px;
+    transition: left 0.5s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    top: 150px;
+    font-family: 'BlackMyth';
+    font-size: 60px;
+    white-space: pre;
+    backdrop-filter: blur(5px);
+    z-index: 2000px;
+    overflow: hidden;
+  } */
+  
+  /* .LeftBtnFirst:hover {
+    left: 0px;
+    text-align: center;
+  }
+  
+  .LeftBtnFirst .LeftBtnWords:hover{
+    left: 0px;
+  } */
+  
+  .LeftBtnSecond {
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left: -150px;
+    transition: left 0.5s ease-in-out;
+    border: none;
+    outline: none;
+    position: fixed;
+    cursor: pointer;
+    top: 250px;
+    font-family: 'BlackMyth';
+    font-size: 60px;
+    white-space: pre;
+    backdrop-filter: blur(5px);
+    z-index: 2000px;
+    overflow: hidden;
+  }
+  
+  .LeftBtnSecond:hover {
+    left: 0px;
+  }
+  
+  .LeftBtnSecond .LeftBtnWords:hover{
+    left: 0px;
+  }
+  
+  .LeftBtnThree {
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left: -150px;
+    transition: left 0.5s ease-in-out;
+    border: none;
+    outline: none;
+    position: fixed;
+    cursor: pointer;
+    top: 350px;
+    font-family: 'BlackMyth';
+    font-size: 60px;
+    white-space: pre;
+    backdrop-filter: blur(5px);
+    z-index: 2000px;
+    overflow: hidden;
+  }
+  
+  .LeftBtnThree:hover {
+    left: 0px;
+  }
+  
+  .LeftBtnThree .LeftBtnWords:hover{
+    left: 0px;
+  }
+
+  

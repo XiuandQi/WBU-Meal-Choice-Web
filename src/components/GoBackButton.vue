@@ -1,3 +1,4 @@
+<!-- 已弃用 -->
 <template>
     <div class="gobackBtnDiv left-go-on">
       <button class="gobackBtn" @click="handleGoBack">
@@ -8,7 +9,6 @@
           <div class="getbackWord">
             返&nbsp;&nbsp;回
           </div>
-          <!-- <img src="../assets/image/goback.png" class="getbackWord"> -->
         </span>
       </button>
     </div>
