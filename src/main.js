@@ -7,7 +7,7 @@ import './assets/south_div.css'
 import './assets/outschool_div.css'
 import './assets/left_btns.css'
 import './assets/roll_btns.css'
-// import './assets/media_adaptation.css'
+import './assets/media_adaptation.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'

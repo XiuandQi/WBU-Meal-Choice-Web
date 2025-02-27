@@ -4,7 +4,6 @@
       <SubButtons v-if="!showSubButtons" @button-clicked="handleButtonClick" />
     </Transition>
     <SubButtonsList v-if="showSubButtons" :buttons="subButtons" @button-clicked="handleSubButtonClick" @go-back="handleGoBack"/>
-    <!-- <GoBackButton v-if="showSubButtons" @go-back="handleGoBack" /> -->
     <Transition name="AllScreenDiv1">
       <FirstFloorDiv v-if="showFirstBtn" />
     </Transition>
@@ -23,7 +22,6 @@
 import MainTitle from './components/MainTitle.vue';
 import SubButtons from './components/SubButtons.vue';
 import SubButtonsList from './components/SubButtonsList.vue';
-// import GoBackButton from './components/GoBackButton.vue';
 import FirstFloorDiv from './components/FirstFloorDiv.vue';
 import SecondFloorDiv from './components/SecondFloorDiv.vue';
 import SouthPartDiv from './components/SouthPartDiv.vue';
@@ -35,7 +33,6 @@ export default {
     MainTitle,
     SubButtons,
     SubButtonsList,
-    // GoBackButton,
     FirstFloorDiv,
     SecondFloorDiv,
     SouthPartDiv,

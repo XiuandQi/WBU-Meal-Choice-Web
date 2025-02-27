@@ -156,14 +156,6 @@ body {
     right: 0%;
   }
 }
-/* .ScreenDiv {
-  position: relative;
-  max-width: 60rem;
-  height: 600px;
-  border-radius: 20px;
-  color: black;
-  border: 10px, solid, rgb(0, 0, 0, 0.5);
-} */
 .ScreenDiv {
   position: relative;
   max-width: 80rem;
@@ -171,9 +163,6 @@ body {
   border-radius: 20px;
   color: black;
   border: 10px, solid, rgb(0, 0, 0, 0.5);
-  /* top: 50%;
-  translate: -50% -50%;
-  left: 50%; */
   min-width: 30rem;
   margin: 0 auto;
   margin-top: 18vh;

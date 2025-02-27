@@ -17,9 +17,9 @@
             </span>
           </div>
         </div>
-        <button @click="showHiddenTips" class="choiceBtn1">
-          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
-        </button>
+        <div class="rollDiv">
+          <button class="rollBtn" @click="showHiddenTips">抽<span>取</span></button>
+        </div>
     </div>
 </template>
 <script>

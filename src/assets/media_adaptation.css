@@ -1,170 +1,33 @@
-/* pingban */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .MainTitle1{
-        font-size: 80px;
-    }
-
-    .MainTitle2{
-        font-size: 45px;
-    }
-
-    .MainTitle{
-        align-items: center;
-        justify-content: center;
-        left: 50%;
-    }
-
-    .move-and-shrink {
-        scale: 0.5;
-        left: 0%;
-        translate: 0 0;
-        transform-origin: left top;
-    }
-
-    .container {
-        width: auto;
-        font-size: 50px;
-        padding: 10px;
-    }
-
-    .LeftBtnFirst{
-        opacity: 0;
-    }
-
-    .LeftBtnSecond{
-        opacity: 0;
-    }
-
-    .LeftBtnThree{
-        opacity: 0;
-    }
-
-    .gobackBtnDiv{
-        top: auto;
-        bottom: 20px;
-        scale: 0.8;
-    }
-
-    .right-go-on {
-        animation: right-go-on 1s ease-in-out;
-    }
-      
-    @keyframes right-go-on {
-        from {
-          right: -1500px;
-        }
-        to {
-          right: -20%;
-        }
-    }
-    
-    .ScreenDiv{
-        scale: 0.5;
-        top: 0%;
-        right: -20%;
-    }
-
-    .AllScreenDiv1-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv2-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv3-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv4-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    @keyframes AllScreenDiv {
-        from {
-            right: -20%;
-        }
-        to {
-            right: -1500px;
-        }
-    }
-}
-
 /* Phone */
 @media screen and (orientation: portrait) and (max-width: 767px) {
-    .MainTitle1{
-        font-size: 50px;
+    :root{
+        --MainTitle1FontSize: 70px;
+        --MainTitle2FontSize: 40px;
     }
 
-    .MainTitle2{
-        font-size: 30px;
-    }
 
     .juanzhouDiv{
-        display: block;
+        display: grid;
+        margin: 50% auto;
     }
 
     .container {
         width: auto;
-        font-size: 50px;
+        font-size: 60px;
         padding: 30px;
     }
 
-    .LeftBtnFirst{
-        opacity: 0;
-    }
-
-    .LeftBtnSecond{
-        opacity: 0;
-    }
-
-    .LeftBtnThree{
-        opacity: 0;
+    .LeftBtn{
+        display: none;
     }
 
     .gobackBtnDiv{
-        top: auto;
-        bottom: 20px;
-        scale: 0.5;
+        scale: 0.7;
     }
 
-    .ScreenDiv{
-        scale: 0.3;
-        right: -104%;
-    }
-
-    @keyframes right-go-on {
-        from {
-          right: -1500px;
-        }
-        to {
-          right: -104%;
-        }
-    }
-
-    .AllScreenDiv1-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv2-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv3-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv4-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    @keyframes AllScreenDiv {
-        from {
-            right: -104%;
-        }
-        to {
-            right: -1500px;
-        }
-    }
 }
 
 @media screen and (orientation: landscape) and (max-width: 767px){
-    .ScreenDiv{
-        scale: 0.5;
-        top: -15%;
-    }
 
     .gobackBtnDiv{
         scale: 0.5  ;
@@ -174,106 +37,32 @@
 
 /* iPad Pro */
 @media screen and (width:1366px) and (height:1024px){
-    .MainTitle1{
-        font-size: 90px;
-    }
-
-    .MainTitle2{
-        font-size: 55px;
-    }
-
-    .MainTitle{
-        align-items: center;
-        justify-content: center;
-        left: 50%;
-    }
-
-    .move-and-shrink {
-        scale: 0.5;
-        left: 0%;
-        translate: 0 0;
-        transform-origin: left top;
+    :root{
+        --MainTitle1FontSize: 150px;
+        --MainTitle2FontSize: 55px;
     }
 
     .container {
         width: auto;
         font-size: 55px;
-        top: 150px;
         padding: 60px;
     }
 
-    .LeftBtnFirst{
-        opacity: 0;
-    }
-
-    .LeftBtnSecond{
-        opacity: 0;
-    }
-
-    .LeftBtnThree{
-        opacity: 0;
+    .LeftBtn{
+        display: none;
     }
 
     .gobackBtnDiv{
-        top: auto;
-        bottom: 20px;
-        scale: 0.8;
-    }
-
-    .right-go-on {
-        animation: right-go-on 1s ease-in-out;
-    }
-      
-    @keyframes right-go-on {
-        from {
-          right: -1500px;
-        }
-        to {
-          right: 0%;
-        }
-    }
-    
-    .ScreenDiv{
-        scale: 0.9;
-        top: 20%;
-        right: 0%;
-    }
-
-    .AllScreenDiv1-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv2-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv3-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv4-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    @keyframes AllScreenDiv {
-        from {
-            right: 0%;
-        }
-        to {
-            right: -1500px;
-        }
+        position: fixed;
+        top: 360px;
     }
 }
 
+/* xiaomi pad 6 pro */
 @media screen and (min-width: 1116px) and (max-width: 1365px) {
-    .MainTitle1{
-        font-size: 80px;
-    }
-
-    .MainTitle2{
-        font-size: 45px;
-    }
-
-    .MainTitle{
-        align-items: center;
-        justify-content: center;
-        left: 50%;
+    :root{
+        --MainTitle1FontSize: 150px;
+        --MainTitle2FontSize: 55px;
     }
 
     .move-and-shrink {
@@ -289,61 +78,12 @@
         padding: 10px;
     }
 
-    .LeftBtnFirst{
-        opacity: 0;
-    }
-
-    .LeftBtnSecond{
-        opacity: 0;
-    }
-
-    .LeftBtnThree{
-        opacity: 0;
+    .LeftBtn{
+        display: none;
     }
 
     .gobackBtnDiv{
-        top: auto;
-        bottom: 20px;
         scale: 0.7;
-    }
-
-    .right-go-on {
-        animation: right-go-on 1s ease-in-out;
-    }
-      
-    @keyframes right-go-on {
-        from {
-          right: -1500px;
-        }
-        to {
-          right: -10%;
-        }
     }
     
-    .ScreenDiv{
-        scale: 0.7;
-        top: 0%;
-        right: -10%;
-    }
-
-    .AllScreenDiv1-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv2-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv3-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    .AllScreenDiv4-leave-active{
-        animation: AllScreenDiv 0.5s ease-in-out;
-    }
-    @keyframes AllScreenDiv {
-        from {
-            right: -10%;
-        }
-        to {
-            right: -1500px;
-        }
-    }
 }

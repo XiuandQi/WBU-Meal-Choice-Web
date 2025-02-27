@@ -2,31 +2,30 @@
     <div id="screenDiv" class="ScreenDiv right-go-on">
         <div class="firstMealDiv">
             <div>
-                {{ currentWords }}
+                <!-- {{ currentWords }} -->
+                  {{ stores_data[currentWords] }}
             </div>
         </div>
-        <button @click="showRandomImage" class="choiceBtn1">
-          抽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取
-        </button>
+        <RollComponents :stores_data="stores_data" @RandomRoll="showRandomImage" @ResetSelection="showRandomImage"/>
     </div>
 </template>
 <script>
+import RollComponents from './RollComponents.vue';
+import stores_data from '../data/stores_data.json';
 export default {
     name: 'FirstFloorDiv',
     data(){
         return{
-            FFMW:[
-                '自助餐',
-                '天天价特色菜',
-                '民族窗口'
-            ],
-            currentWords: '',
+            currentWords:null,
+            stores_data:stores_data.north_area[0],
         }
     },
+    components:{
+        RollComponents,
+    },
     methods:{
-        showRandomImage(){
-            const randomIndex = Math.floor(Math.random() * this.FFMW.length);
-            this.currentWords = this.FFMW[randomIndex];
+        showRandomImage(index){
+            this.currentWords = index;
         }
     }
 }
