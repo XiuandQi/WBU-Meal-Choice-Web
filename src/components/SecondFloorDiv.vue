@@ -18,7 +18,7 @@
               >{{value}}</div>
           </TransitionGroup>
         </div>
-        <RollComponents :stores_data="stores_data" @RandomRoll="selectedIndexSync" @ResetSelection="selectedIndexSync"/>
+        <RollComponents :stores_data="stores_data" @Roll="selectedIndexSync" @Reset="selectedIndexSync"/>
     </div>
 </template>
 

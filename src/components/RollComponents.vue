@@ -1,9 +1,9 @@
 <template>
     <div class="rollDiv">
-        <button @click="ResetSelection" class="SFResetBtn">
+        <button @click="Reset" class="SFResetBtn">
           <img src="../assets/image/restartbtn.png" class="resetIcon">
         </button>
-        <button @click="RandomRoll" class="rollBtn">抽<span>取</span></button>
+        <button @click="Roll" class="rollBtn">抽<span>取</span></button>
     </div>
 </template>
 
@@ -17,15 +17,15 @@ export default {
     }
   },
   methods: {
-    RandomRoll() {
+    Roll() {
       this.selectedIndex = Math.floor(Math.random() * this.stores_data.length);
       console.log(this.selectedIndex);
-      this.$emit("RandomRoll", this.selectedIndex);
+      this.$emit("Roll", this.selectedIndex);
     },
 
-    ResetSelection() {
+    Reset() {
       this.selectedIndex = null;
-      this.$emit("ResetSelection", this.selectedIndex);
+      this.$emit("Reset", this.selectedIndex);
     }
   }
 }

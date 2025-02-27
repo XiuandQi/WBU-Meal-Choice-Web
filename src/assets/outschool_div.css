@@ -1,18 +1,18 @@
 .OutSchoolDiv{
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     border: 5px solid rgba(0, 0, 0, 0.9);
     border-radius: 50px;
     height: 300px;
     width: 300px;
     margin: auto 100px;
-    top: 60px;
-    left: 100px;
     text-align: center;
     line-height: 100%;
     font-family: 'BlackMyth';
     font-size: 60px;
     transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
 .OutSchoolDiv span{

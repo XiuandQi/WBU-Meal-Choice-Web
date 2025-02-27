@@ -6,7 +6,7 @@
                   {{ stores_data[currentWords] }}
             </div>
         </div>
-        <RollComponents :stores_data="stores_data" @RandomRoll="showRandomImage" @ResetSelection="showRandomImage"/>
+        <RollComponents :stores_data="stores_data" @Roll="showRandomImage" @Reset="showRandomImage"/>
     </div>
 </template>
 <script>
